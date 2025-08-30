@@ -1,6 +1,6 @@
 import gleam/io.{println}
 
-pub fn main() -> Nil {
+pub fn main() {
   let x: String = "Original"
   println(x)
 
@@ -12,4 +12,7 @@ pub fn main() -> Nil {
 
   // unchanged
   println(y)
+
+  // unused variables should prefix with _ to indicate as such
+  let _disacrd: String = "This is unused"
 }
