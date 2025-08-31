@@ -1,5 +1,7 @@
 //// This is a comment for the whole file/module
 //// It can span multiple lines
+//// 
+//// because there is no main function, this file cannot be run!
 
 /// This is a comment for a type whose value can never be constructed
 /// It can also span multiple lines
@@ -18,4 +20,3 @@ pub fn twice(arg: value, f: fn(value) -> value) -> value {
 pub fn thrice(arg: value, f: fn(value) -> value) -> value {
   f(f(f(arg)))
 }
-// because there is no main function, this file cannot be run!
